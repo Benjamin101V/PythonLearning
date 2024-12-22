@@ -24,6 +24,7 @@ def InsertionSort_2(arrays):
                 #There is no need to continue comparing values when we have already found the correct place for the current value
                 break
         arrays[insert_index]=current_value
+    return arrays
 
 arr=[12,43,55,86,90,23,21,4,56,77]
 print(InsertionSort_1(arr))
