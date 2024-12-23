@@ -16,5 +16,6 @@ def countingSort(arrays):
 #The number of values to be sorted "n" is "max_value"
 #"k" must smaller than "n", or the Sort will be pointless
 
-arr=[1,2,2,7,7,8,8,4,4,3,3,9,9,1,1]
-print(countingSort(arr))
+if __name__ == '__main__':
+    arr=[1,2,2,7,7,8,8,4,4,3,3,9,9,1,1]
+    print(countingSort(arr))

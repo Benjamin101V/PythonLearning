@@ -21,5 +21,6 @@ def QuickSort(arrays, low=0, high=None):
 #The core part of QuickSort is the func "partition" which identifies the pivot element of the sort
 #The speed[O(nlog(n))] of the Sort depends on whether the pivot element is correctly identified or not
 
-arr=[12,43,65,32,67,14,78,98,44,55]
-print(QuickSort(arr))
+if __name__ == '__main__':
+    arr=[12,43,65,32,67,14,78,98,44,55]
+    print(QuickSort(arr))
