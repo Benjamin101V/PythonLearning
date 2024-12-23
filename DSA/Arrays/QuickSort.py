@@ -1,13 +1,13 @@
 def partition(arrays, low, high):
 #The function to split the unsorted arrays into 2 parts
-    pivot = arrays[high]  #Choosing the final element as the pivot element at first
+    pivot = arrays[high]  #Choosing the final element as the pivot element begin
     i = low - 1 #The pointer to record the right boundaries of smaller part than pivot element
     for j in range(low, high): #low ~ high, the "bigger part" than pivot element
         if arrays[j] <= pivot:
             i += 1
             arrays[i], arrays[j] = arrays[j], arrays[i]
     arrays[i+1], arrays[high] = arrays[high], arrays[i+1] #Switch the pivot value
-    return i+1  #Returning the index where the next split in sub-arrays happens
+    return i+1  #Return the index where the next split in sub-arrays happens
 
 def QuickSort(arrays, low=0, high=None):
     if high is None:
